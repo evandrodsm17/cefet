@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800&family=Open+Sans:wght@600;800&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #eee;
+}
+
+.conteudo{
+    max-width: 1280px;
+    margin:0 auto;
+    padding:3rem 2rem;
+}
+
+.conteudo .logoprincipal{
+    height: 25rem;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.conteudo .titulo{
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #0c34b9;
+}
+
+.conteudo .subtitulo{
+    font-size: 2.5rem;
+    color: rgb(230, 13, 13);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.conteudo .paragrafo{
+    font-size: 1.5rem;
+    color: rgb(20, 20, 20);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.conteudo .botao{
+    width:30rem;
+    margin:1rem;
+}
+
+.conteudo .conteudo-processos{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap:2rem;
+}
+
+.conteudo .conteudo-processos .processo{
+    text-align: center;
+    padding:3rem 2rem;
+    background: #fff;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+}
+
+.conteudo .conteudo-processos .processo:hover{
+    outline: .2rem solid rgb(2, 74, 228);
+    outline-offset: 0;
+}
+.conteudo .conteudo-processos .processo img{
+    height:10rem;
+}
+
+.conteudo .conteudo-processos .processo:hover img{
+    transform: scale(.9);
+}
+
+.conteudo .conteudo-processos .processo h3{
+    padding: .5rem 0;
+    font-size: 2rem;
+    color: #444;
+}
+
+.conteudo .conteudo-processos .processo:hover h3{
+    color: #eb0f0f;
+}
+
+.conteudo .conteudo-processos .processo .cargo{
+    font-size: 2rem;
+    color: #444;
+}
+
+@media only screen and (max-width:485px){
+
+    .conteudo .titulo{
+        font-size: 2.5rem;
+        color: rgb(255, 255, 255);
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #0c34b9;
+    }
+
+    .conteudo .subtitulo{
+        font-size: 2.0rem;
+        color: rgb(230, 13, 13);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+
+}
